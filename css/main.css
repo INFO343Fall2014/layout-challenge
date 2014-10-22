@@ -2,38 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
 /*Media Query*/
-@media screen and (min-width: 992px) {
-    body {
-        background-image: url(../img/background.jpg);
-		background-repeat: no-repeat;
-    	background-attachment: fixed;
-    	font-size: 18px;
-    }
 
-    main {
-    	margin-left: 30%;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		margin-right: 20px;
-    }
-
-    header p {
-    	display: inline;
-    }
-
-    .container-fluid {
-    	margin-left: 30%;
-    	margin-top: 20px;
-    	margin-right: 20px;
-    	margin-bottom: 20px;
-    }
-
-    nav {
-    	position: absolute;
-    	top: 10px;
-    	right: 10px;
-    }
-}
 
 .container-fluid {
 	margin-top: 0;
@@ -49,11 +18,7 @@ nav a:link {
 	color: #55E;
 }
 
-nav a:hover {
-	color: #00E;
-}
-
-nav input:focus {
+nav a:hover, nav input:focus {
 	color: #00E;
 }
 
@@ -70,21 +35,12 @@ body{
     background-attachment: fixed;
 }
 
-a:link { 
+a:link, a:visited { 
     text-decoration: none;
     color: #0000AA;
 }
 
-a:visited { 
-    text-decoration: none;
-    color: #0000AA;
-}
-
-a:hover { 
-    color: #0000EE;
-}
-
-input:focus { 
+a:hover, input:focus { 
     color: #0000EE;
 }
 
@@ -121,9 +77,9 @@ header {
 }
 
 header p {
-		font-size: 120%;
-		margin: 0;
-		color: #EEEEEE;
+	font-size: 120%;
+	margin: 0;
+	color: #EEEEEE;
 }
 
 .menu {
@@ -155,4 +111,51 @@ nav li {
 	margin-right: 1em;
 	list-style: none;
 	display: inline-block;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../img/background.jpg);
+		background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	font-size: 18px;
+    }
+
+    main {
+    	margin-left: 30%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-right: 20px;
+    }
+
+    header p {
+    	display: inline;
+    }
+
+    .container-fluid {
+    	margin-left: 30%;
+    	margin-top: 20px;
+    	margin-right: 20px;
+    	margin-bottom: 20px;
+    }
+
+/*In the assignment it said 10px. It seem off the formatting. So I changed it to 20px. To make it looks good :)*/
+    nav {
+    	position: absolute;
+    	top: 20px;
+    	right: 20px;
+    }
+
+    .menu {
+    	padding-left: 0em;
+    	margin-left: 0;
+    	margin-right: 0;
+    }
+
+    .container-fluid {
+    	padding-left: 0em;
+   		padding-right: 0em;
+    }
 }
